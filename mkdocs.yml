@@ -38,5 +38,6 @@ nav:
   - 首页: index.md
   - 学习笔记:
       - 学习笔记总览: notes.md
-      - Pi Agent拆解: pi-agent.md
+      - Pi Agent拆解:
+          - 拆解路线: pi-agent/index.md
   - 实践: practice.md

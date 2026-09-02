@@ -4,4 +4,4 @@
 
 ## 模块
 
-- [Pi Agent拆解](pi-agent.md)
+- [Pi Agent拆解](pi-agent/index.md)
