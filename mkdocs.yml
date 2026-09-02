@@ -40,4 +40,5 @@ nav:
       - 学习笔记总览: notes.md
       - Pi Agent拆解:
           - 拆解路线: pi-agent/index.md
+          - Pi Agent 三层架构: pi-agent/three-layer-architecture.md
   - 实践: practice.md
