@@ -178,8 +178,8 @@ body,
 }
 
 .md-typeset a {
-  color: var(--naomi-accent);
-  text-decoration-color: var(--naomi-line);
+  color: var(--naomi-muted);
+  text-decoration-color: var(--naomi-muted);
   text-underline-offset: 0.2em;
 }
 
