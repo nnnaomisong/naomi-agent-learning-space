@@ -13,3 +13,6 @@
 
 1. [Pi Agent三层架构](three-layer-architecture.md)
    梳理模型层、Agent Runtime 与编程工具层之间的职责边界和调用路径。
+
+2. [Agent Loop从最简到叠加](agent-loop.md)
+   从最简循环出发，逐层理解模型如何提出工具调用、工具结果如何回到上下文，以及消息队列和停止条件如何让循环继续或结束。
