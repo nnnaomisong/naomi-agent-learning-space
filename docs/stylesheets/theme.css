@@ -5,6 +5,7 @@
   --naomi-muted: #6B6864;
   --naomi-line: #C9C7C4;
   --naomi-accent: #000000;
+  --naomi-link: #8F7054;
   --naomi-night: #000000;
   --naomi-sans: "Founders Grotesk", "Helvetica Neue", "Avenir Next", "Inter", Arial, sans-serif;
   --naomi-mono: "Founders Grotesk Mono", "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
@@ -178,8 +179,8 @@ body,
 }
 
 .md-typeset a {
-  color: var(--naomi-muted);
-  text-decoration-color: var(--naomi-muted);
+  color: var(--naomi-link);
+  text-decoration-color: var(--naomi-link);
   text-underline-offset: 0.2em;
 }
 
