@@ -9,6 +9,11 @@
   --naomi-mono: "Founders Grotesk Mono", "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
 }
 
+::selection {
+  background: var(--naomi-paper-strong);
+  color: var(--naomi-ink);
+}
+
 body,
 .md-container,
 .md-main,
