@@ -22,7 +22,7 @@ theme:
       accent: brown
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/theme.css
 
 markdown_extensions:
   - admonition
