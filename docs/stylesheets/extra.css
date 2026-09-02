@@ -7,11 +7,27 @@
   --naomi-accent: #735d4d;
   --naomi-sans: "Founders Grotesk", "Helvetica Neue", "Avenir Next", "Inter", Arial, sans-serif;
   --naomi-mono: "Founders Grotesk Mono", "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+
+  --md-primary-fg-color: var(--naomi-accent);
+  --md-primary-fg-color--light: #8f7766;
+  --md-primary-fg-color--dark: #594437;
+  --md-accent-fg-color: var(--naomi-accent);
+  --md-typeset-a-color: var(--naomi-accent);
 }
 
-::selection {
-  background: var(--naomi-paper-strong);
-  color: var(--naomi-ink);
+body[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--naomi-accent) !important;
+  --md-primary-fg-color--light: #8f7766 !important;
+  --md-primary-fg-color--dark: #594437 !important;
+  --md-accent-fg-color: var(--naomi-accent) !important;
+  --md-typeset-a-color: var(--naomi-accent) !important;
+}
+
+::selection,
+::-moz-selection {
+  background-color: #d8c2ad !important;
+  color: #302923 !important;
+  text-shadow: none;
 }
 
 body,
