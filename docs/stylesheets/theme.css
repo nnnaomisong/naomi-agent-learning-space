@@ -23,7 +23,12 @@ body[data-md-color-scheme="default"] {
   --md-typeset-a-color: var(--naomi-accent) !important;
 }
 
-::selection,
+::selection {
+  background-color: #d8c2ad !important;
+  color: #302923 !important;
+  text-shadow: none;
+}
+
 ::-moz-selection {
   background-color: #d8c2ad !important;
   color: #302923 !important;
