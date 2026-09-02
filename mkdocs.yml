@@ -1,0 +1,42 @@
+site_name: Naomi的Agent学习空间
+site_description: Naomi 的 Agent 学习、实验与思考记录
+site_url: https://nnnaomisong.github.io/naomi-agent-learning-space/
+
+theme:
+  name: material
+  language: zh
+  font: false
+  icon:
+    logo: material/hexagon-outline
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: brown
+      accent: brown
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - md_in_html
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - 首页: index.md
+  - 学习笔记:
+      - 学习笔记总览: notes.md
+      - Pi Agent拆解: pi-agent.md
+  - 实践: practice.md
