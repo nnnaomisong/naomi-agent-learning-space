@@ -16,3 +16,6 @@
 
 2. [Agent Loop从最简到叠加](agent-loop.md)
    从最简循环出发，逐层理解模型如何提出工具调用、工具结果如何回到上下文，以及消息队列和停止条件如何让循环继续或结束。
+
+3. [从 `streamSimple()` 看懂 Pi Agent 的模型调用](model-call.md)
+   顺着模型调用链路，理解 Pi 如何统一 Provider 路由、流式事件、Thinking Level、缓存和错误处理。
