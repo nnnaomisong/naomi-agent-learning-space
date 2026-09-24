@@ -1,6 +1,6 @@
-function renderMermaidDiagrams() {
-  if (typeof mermaid === "undefined") return;
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
+function renderMermaidDiagrams() {
   mermaid.initialize({
     startOnLoad: false,
     theme: "base",
@@ -14,11 +14,16 @@ function renderMermaidDiagrams() {
     },
   });
 
-  mermaid.run({ querySelector: ".mermaid" });
+  mermaid.run({ querySelector: ".mermaid" }).catch((error) => {
+    const message = error instanceof Error ? error.message : JSON.stringify(error);
+    console.error(`Mermaid render failed: ${message}`);
+  });
 }
 
 if (typeof document$ !== "undefined") {
   document$.subscribe(renderMermaidDiagrams);
-} else {
+} else if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", renderMermaidDiagrams);
+} else {
+  renderMermaidDiagrams();
 }

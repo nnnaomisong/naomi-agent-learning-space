@@ -19,3 +19,6 @@
 
 3. [从 `streamSimple()` 看懂 Pi Agent 的模型调用](pi-agent-model-call-blog.md)
    顺着模型调用链路，理解 Pi 如何统一 Provider 路由、流式事件、Thinking Level、缓存和错误处理。
+
+4. [Pi Agent 工具调用到底发生了什么？](tool-call.md)
+   从 `ToolCall` 出发，拆解参数验证、前后置 Hook、工具执行、结果回写，以及顺序与并行调用背后的保护设计。

@@ -25,8 +25,8 @@ extra_css:
   - stylesheets/theme.css
 
 extra_javascript:
-  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
-  - javascripts/mermaid.js
+  - path: javascripts/mermaid.js
+    type: module
 
 markdown_extensions:
   - admonition
