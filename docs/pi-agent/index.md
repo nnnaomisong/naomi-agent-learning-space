@@ -25,3 +25,6 @@
 
 5. [消息在 Pi 中的传递](message-flow.md)
    沿着一次 `!ls -la` 的完整路径，理解 Agent 内部消息、LLM 标准消息、上下文转换与工具结果回写如何串成循环。
+
+6. [Pi 的事件驱动系统](event-driven-system.md)
+   对比 `session.subscribe` 与 `pi.on` 两条事件通道，理解运行状态如何被观察，以及扩展如何在关键节点拦截和改写流程。
