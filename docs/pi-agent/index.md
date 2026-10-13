@@ -28,3 +28,6 @@
 
 6. [Pi 的事件驱动系统](event-driven-system.md)
    对比 `session.subscribe` 与 `pi.on` 两条事件通道，理解运行状态如何被观察，以及扩展如何在关键节点拦截和改写流程。
+
+7. [从完整链路理解 pi Agent 的上下文工程](context-engineering.md)
+   沿着一次任务的完整链路，理解系统提示词组装、工具输出截断、上下文压缩与分支摘要如何组织模型能看到的材料。
