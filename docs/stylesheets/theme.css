@@ -327,6 +327,93 @@ button:active,
   margin-top: 0.35rem !important;
 }
 
+/* Home topic cards */
+.pi-cards {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.5rem;
+}
+
+.md-typeset a.pi-card,
+.md-typeset a.pi-chapter {
+  color: var(--naomi-ink);
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.md-typeset a.pi-card {
+  border: 1px solid var(--naomi-line);
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem 1.5rem 1.3rem;
+}
+
+.md-typeset a.pi-card:hover,
+.md-typeset a.pi-card:focus-visible,
+.md-typeset a.pi-chapter:hover,
+.md-typeset a.pi-chapter:focus-visible {
+  background-color: var(--naomi-paper-strong) !important;
+  border-color: var(--naomi-ink);
+  color: var(--naomi-ink) !important;
+}
+
+.pi-card .pi-label {
+  margin: 0;
+}
+
+.md-typeset .pi-card h3 {
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin: 0.8rem 0 0.6rem;
+}
+
+.pi-card p:not(.pi-label) {
+  color: var(--naomi-muted);
+  flex: 1;
+  line-height: 1.75;
+  margin: 0 0 1.2rem;
+}
+
+.pi-card__more {
+  font-family: var(--naomi-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+}
+
+/* Pi Agent chapter list */
+.pi-chapters {
+  border-top: 1px solid var(--naomi-line);
+}
+
+.md-typeset a.pi-chapter {
+  border-bottom: 1px solid var(--naomi-line);
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: 2.4rem minmax(0, 1fr);
+  padding: 1rem 0.6rem;
+}
+
+.pi-chapter__no {
+  color: var(--naomi-muted);
+  font-family: var(--naomi-mono);
+  font-size: 0.8rem;
+  padding-top: 0.15rem;
+}
+
+.pi-chapter__body strong {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.pi-chapter__body > span {
+  color: var(--naomi-muted);
+  display: block;
+  font-size: 0.92em;
+  line-height: 1.7;
+}
+
 @media screen and (max-width: 700px) {
   .md-main__inner {
     margin-top: 1.2rem;
@@ -353,5 +440,15 @@ button:active,
 
   .pi-hero__aside .pi-value {
     margin-bottom: 0;
+  }
+
+  .pi-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset a.pi-chapter {
+    gap: 0.8rem;
+    grid-template-columns: 1.8rem minmax(0, 1fr);
+    padding: 0.9rem 0.2rem;
   }
 }

@@ -1,5 +1,5 @@
 site_name: Naomi的Agent学习空间
-site_description: Naomi 的 Agent 学习、实验与思考记录
+site_description: Naomi 的 Agent 学习笔记：Pi Agent 源码拆解与 CMU 课程笔记
 site_url: https://nnnaomisong.github.io/naomi-agent-learning-space/
 
 theme:
@@ -12,7 +12,10 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.sections
+    - navigation.indexes
+    - navigation.footer
     - navigation.top
+    - toc.follow
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -30,6 +33,7 @@ extra_javascript:
 
 markdown_extensions:
   - admonition
+  - attr_list
   - md_in_html
   - pymdownx.highlight
   - pymdownx.superfences:
@@ -44,8 +48,22 @@ markdown_extensions:
 
 nav:
   - 首页: index.md
-  - 学习笔记:
-      - 学习笔记总览: notes.md
-      - Pi Agent拆解:
-          - 拆解路线: pi-agent/index.md
-  - 实践: practice.md
+  - Pi Agent 拆解:
+      - pi-agent/index.md
+      - 整体结构:
+          - 三层架构: pi-agent/three-layer-architecture.md
+      - 执行链路:
+          - Agent Loop: pi-agent/agent-loop.md
+          - 模型调用: pi-agent/pi-agent-model-call-blog.md
+          - 工具调用: pi-agent/tool-call.md
+      - 消息与事件:
+          - 消息传递: pi-agent/message-flow.md
+          - 事件驱动系统: pi-agent/event-driven-system.md
+      - 上下文与会话:
+          - 上下文工程: pi-agent/context-engineering.md
+          - 上下文压缩: pi-agent/compaction.md
+          - 会话管理: pi-agent/session-storage-and-recovery.md
+  - CMU 课程笔记:
+      - cmu/index.md
+      - 11-768 AI Agents:
+          - 工具调用: cmu/tool-use.md
