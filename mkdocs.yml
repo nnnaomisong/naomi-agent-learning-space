@@ -67,3 +67,4 @@ nav:
       - cmu/index.md
       - 11-768 AI Agents:
           - 工具调用: cmu/tool-use.md
+          - 上下文管理: cmu/context-management.md
