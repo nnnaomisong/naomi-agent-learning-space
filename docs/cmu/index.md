@@ -30,4 +30,11 @@ title: CMU 课程笔记
       <span>对应第 3 讲 Context Management，补充 KV cache、中段遗忘、混合注意力架构、长上下文训练、服务端缓存复用，以及 compaction 的漂移与评测。</span>
     </span>
   </a>
+  <a class="pi-chapter" href="memory-and-skills/">
+    <span class="pi-chapter__no">03</span>
+    <span class="pi-chapter__body">
+      <strong>CMU 11-768 Memory and Skills：Agent 怎么从经验中学习？</strong>
+      <span>对应第 4 讲 Memory and Skills，介绍经验记忆、技能加载与归纳，以及技能库的维护。</span>
+    </span>
+  </a>
 </div>
